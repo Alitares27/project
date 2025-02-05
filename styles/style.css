@@ -1,122 +1,153 @@
 :root {
-    --primary-color: #004b23;
-    --secondary-color: #006400;
-    --accent-color: #9ef01a;
-    --accent-color2: #38b000;
-    --text-color: black;
-    --title-font:"Dancing Script", serif;
-    --subtitle-font:"Merriweather", serif;
-    --paragraph-font:"Roboto", serif;
-  }
+  --primary-color: #004b23;
+  --secondary-color: #006400;
+  --accent-color: #9ef01a;
+  --accent-color2: #38b000;
+  --text-color: black;
+  --title-font: "Dancing Script", serif;
+  --subtitle-font: "Merriweather", serif;
+  --paragraph-font: "Roboto", serif;
+}
 
-  body {
-    margin: 0 auto;
-    padding: 0;
-    color: var(--text-color);
-    width: 80%;
-    align-items: center;
-  }
+body {
+  margin: 0 auto;
+  padding: 0;
+  color: var(--text-color);
+  width: 80%;
+  align-items: center;
+}
 
-  header {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  nav {
-    background-color: var(--secondary-color);
-    padding: 0.5rem;
-  }
+/*Navigation*/
+nav {
+  background-color: var(--secondary-color);
+  padding: 0.5rem;
+}
 
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-  }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
 
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-  }
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
 
-/*Colors*/
-  .logo{
-    width: 10em;
-    padding-bottom: 1em;
-  }
-
-  .primary{
-    background-color: var(--primary-color);
-    color: white;
-    padding: 0.5em 0.5em;
-  }
-
-  .secondary{
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 0.5em 0.5em;
-  }
-
-  .accent1{
-    background-color: var(--accent-color);
-    color: black;
-    padding: 0.5em 0.5em;
-  }
-
-  .accent2{
-    background-color: var(--accent-color2);
-    color: black;
-    padding: 0.5em 0.5em;
-  }
+a:hover{
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color) ;
+}
 
 /*Typography*/
-.Titles{
-    font-size: 2em;
-    font-weight: 500;
-    font-family: var(--title-font);
+h2 {
+  font-family: var(--title-font);
+  font-size: 3rem;
 }
 
-.subtitles{
-    font-size: 1.5em;
-    font-weight: 500;
-    font-family: var(--subtitle-font);
+h3 {
+  font-family: var(--subtitle-font);
+  font-size: 1.5em;
 }
 
-.paragraphs{
-    font-size: 1em;
-    font-weight: 500;
-    font-family: var(--paragraph-font);
+p {
+  font-family: var(--paragraph-font);
+  font-size: 1.2em;
+}
+
+/*Colors*/
+.logo {
+  width: 10em;
+  padding-bottom: 1em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5em 0.5em;
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.5em 0.5em;
+}
+
+.accent1 {
+  background-color: var(--accent-color);
+  color: black;
+  padding: 0.5em 0.5em;
+}
+
+.accent2 {
+  background-color: var(--accent-color2);
+  color: black;
+  padding: 0.5em 0.5em;
+}
+
+hr{
+  height: 0.2em;
+  background-color: var(--accent-color);
+
+}
+
+/*Typography*/
+h2{
+  text-align: center;
+}
+.Titles {
+  font-size: 2em;
+  font-weight: 500;
+  font-family: var(--title-font);
+}
+
+.subtitles {
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: var(--subtitle-font);
+}
+
+.paragraphs {
+  font-size: 1em;
+  font-weight: 500;
+  font-family: var(--paragraph-font);
 }
 
 /*Wireframes*/
-.Wireframe{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.Wireframe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.largeWireframe{
-    width: 60%;
-    height: auto;
-    padding: 1em;
+.largeWireframe {
+  width: 60%;
+  height: auto;
+  padding: 1em;
 }
 
-.smallWireframe{
-    width: 25%;
-    height: auto;
-    padding: 1em;
+.smallWireframe {
+  width: 25%;
+  height: auto;
+  padding: 1em;
 }
 
-  footer {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 2rem;
-    text-align: center;
-  }
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
