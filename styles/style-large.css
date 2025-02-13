@@ -1,0 +1,212 @@
+@media only screen and (min-width: 25em) {
+    .productOverview {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .chooseUs {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        background-color: rgba(153, 205, 50, 0.08);
+        padding-bottom: 3vw;
+    }
+
+    .chooseUs h2 {
+        font-size: 6vw;
+        font-weight: 900;
+    }
+
+    .chooseUsContainer h3 {
+        font-size: 3vw;
+        font-weight: 700;
+    }
+
+    .bottonLinks {
+        display: grid;
+    }
+
+    .bottonLinks a {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+    }
+
+    .bottonSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 4vw;
+        padding: 2vw 2vw;
+    }
+
+    /*Products*/
+
+    .productList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding-top: 5vw;
+    }
+
+}
+
+@media only screen and (min-width: 45em) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .mainTitle {
+        text-align: center;
+        background-image: url("../images/ecoshopBK.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba(255, 255, 255, 0.7);
+        background-blend-mode: overlay;
+    }
+
+    .productOverview,
+    .productList {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        padding-top: 5vw;
+    }
+
+    .chooseUsContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .bottonDescription {
+        display: grid;
+    }
+
+    .bottonSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .tradeTitle,
+    .linkstitle,
+    .conTitle,
+    .newstitle {
+        font-family: var(--subtitle-font);
+        font-size: 2vw;
+        font-weight: 900;
+    }
+
+    .bottonDescription p,
+    .linkOption,
+    .contactOption,
+    .newsOption {
+        font-family: var(--paragraph-font);
+        font-size: 1vw;
+        font-weight: 450;
+        color: black;
+        padding-bottom: 0.5vw;
+    }
+
+    input {
+        font-family: var(--paragraph-font);
+        font-size: 1.2vw;
+        border-radius: 0.3rem;
+    }
+
+      /*Products*/
+
+      .productList {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding-top: 5vw;
+    }
+
+    .filterContainer{
+        text-align: center;
+      }
+      
+      .filterContainer select{
+        font-family: var(--paragraph-font);
+        font-size: 1.2vw;
+        border-radius: 0.3rem;
+        border-color: var(--secondary-color);
+      }
+      
+      .filterContainer label{
+        font-family: var(--paragraph-font);
+        font-size: 1.4vw;
+        font-weight: 900;
+        color: var(--secondary-color);
+      }
+
+}
+
+@media only screen and (min-width: 65em) {
+    .productOverview,
+    .productList {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        padding-top: 5vw;
+    }
+
+    .chooseUsContainer {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1rem;
+    }
+
+    .bottonSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .tradeTitle,
+    .linkstitle,
+    .conTitle,
+    .newstitle {
+        font-size: 1.5vw;
+    }
+
+    .bottonDescription p,
+    .linkOption,
+    .contactOption,
+    .newsOption {
+        font-size: 1.2vw;
+    }
+
+    input {
+        font-size: 1.5vw;
+    }
+
+    /*Products*/
+
+    .productList {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        padding-top: 5vw;
+    }
+
+}
