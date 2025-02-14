@@ -24,7 +24,7 @@
         font-weight: 700;
     }
 
-    .bottonLinks, .bottonDescription {
+    .bottonDescription {
         display: grid;
     }
 
@@ -216,6 +216,10 @@
         padding-bottom: 0.5em;
         font-weight: 400;
     }
+
+    .bottonLinks {
+        display: grid;
+    }
 }
 
 @media only screen and (min-width: 65em) {
@@ -242,7 +246,7 @@
     }
 
     .bottonDescription p, .linkOption, .contactOption, .newsOption {
-        font-size: 1.2vw;
+        font-size: 1.3vw;
     }
 
     input {
