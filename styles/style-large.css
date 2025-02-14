@@ -1,8 +1,9 @@
 @media only screen and (min-width: 25em) {
-    .productOverview {
+    .productOverview, .productList {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
+        padding-top: 5vw;
     }
 
     .chooseUs {
@@ -23,7 +24,7 @@
         font-weight: 700;
     }
 
-    .bottonLinks {
+    .bottonLinks, .bottonDescription {
         display: grid;
     }
 
@@ -35,26 +36,16 @@
 
     .bottonSection {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         gap: 4vw;
         padding: 2vw 2vw;
     }
 
-    /*Products*/
-
-    .productList {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        padding-top: 5vw;
-    }
-
-    /*About us*/
     .aboutSection {
         display: grid;
         grid-template-columns: 1fr 1fr;
         place-items: center;
-        background-color: rgba(153, 205, 50, 0.05)
+        background-color: rgba(153, 205, 50, 0.05);
     }
 
     .product {
@@ -62,20 +53,19 @@
         grid-template-columns: repeat(2, 1fr);
         grid-column: span 2;
         place-items: center;
-        background-image: url("../images/daffodils.webp");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: rgba(0, 0, 0, 0.2);
+        background: url("../images/daffodils.webp") center/cover no-repeat, rgba(0, 0, 0, 0.2);
         background-blend-mode: overlay;
+    }
+
+    .productDescription, .product h2, .product p {
+        color: white;
+        margin-left: auto;
     }
 
     .productDescription {
         display: grid;
         grid-column: 2/2;
         padding-bottom: 0.5em;
-        color: white;
-        margin-left: auto;
         background-color: rgba(0, 0, 0, 0.5);
         border-radius: 0.4rem;
     }
@@ -83,17 +73,13 @@
     .product h2 {
         padding-top: 0.5em;
         padding-bottom: 0;
-        color: white;
-        margin-left: auto;
     }
 
     .product p {
         padding-bottom: 0.5em;
-        color: white;
-        margin-left: auto;
     }
 
-    hr{
+    hr {
         display: none;
     }
 }
@@ -123,16 +109,11 @@
 
     .mainTitle {
         text-align: center;
-        background-image: url("../images/ecoshopBK.webp");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: rgba(255, 255, 255, 0.7);
+        background: url("../images/ecoshopBK.webp") center/cover no-repeat, rgba(255, 255, 255, 0.7);
         background-blend-mode: overlay;
     }
 
-    .productOverview,
-    .productList {
+    .productOverview, .productList {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
@@ -145,28 +126,18 @@
         gap: 1rem;
     }
 
-    .bottonDescription {
-        display: grid;
-    }
-
     .bottonSection {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    .tradeTitle,
-    .linkstitle,
-    .conTitle,
-    .newstitle {
+    .tradeTitle, .linkstitle, .conTitle, .newstitle {
         font-family: var(--subtitle-font);
         font-size: 2vw;
         font-weight: 900;
     }
 
-    .bottonDescription p,
-    .linkOption,
-    .contactOption,
-    .newsOption {
+    .bottonDescription p, .linkOption, .contactOption, .newsOption {
         font-family: var(--paragraph-font);
         font-size: 1vw;
         font-weight: 450;
@@ -178,15 +149,6 @@
         font-family: var(--paragraph-font);
         font-size: 1.2vw;
         border-radius: 0.3rem;
-    }
-
-    /*Products*/
-
-    .productList {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-        padding-top: 5vw;
     }
 
     .filterContainer {
@@ -207,7 +169,6 @@
         color: var(--secondary-color);
     }
 
-    /*About us*/
     .aboutSection {
         display: flex;
         flex-direction: column;
@@ -216,22 +177,26 @@
         padding-top: 0.5vw;
     }
 
-    .mission {
+    .mission, .story {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
         grid-column: span 2;
         place-items: center;
-        background-image: url("../images/backabout.webp");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: rgba(0, 0, 0, 0.3);
-        background-blend-mode: overlay;
         padding: 1.5vw 1.5vw;
     }
 
-    .missionDescription {
+    .mission {
+        background: url("../images/backabout.webp") center/cover no-repeat, rgba(0, 0, 0, 0.3);
+        background-blend-mode: overlay;
+    }
+
+    .story {
+        background: url("../images/ecology.webp") center/cover no-repeat, rgba(0, 0, 0, 0.2);
+        background-blend-mode: overlay;
+    }
+
+    .missionDescription, .storyDescription {
         display: grid;
         grid-column: 2/2;
         padding-bottom: 0.5em;
@@ -241,66 +206,19 @@
         border-radius: 0.4rem;
     }
 
-    .missionDescription h2 {
+    .missionDescription h2, .storyDescription h2 {
         padding-top: 0.5em;
         padding-bottom: 0;
-        color: white;
-        margin-left: auto;
     }
 
-    .missionDescription p {
+    .missionDescription p, .storyDescription p {
         padding-bottom: 0.5em;
-        color: white;
-        margin-left: auto;
         font-weight: 400;
     }
-
-    .story {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        grid-column: span 2;
-        place-items: center;
-        background-image: url("../images/ecology.webp");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: rgba(0, 0, 0, 0.2);
-        background-blend-mode: overlay;
-        padding: 1.5vw 1.5vw;
-    }
-
-    .storyDescription {
-        display: grid;
-        grid-column: 1/2;
-        padding-bottom: 0.5em;
-        color: white;
-        margin-left: auto;
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 0.4rem;
-    }
-
-    .storyDescription h2 {
-        padding-top: 0.5em;
-        padding-bottom: 0;
-        color: white;
-        margin-left: auto;
-    }
-
-    .storyDescription p {
-        padding-bottom: 0.5em;
-        color: white;
-        margin-left: auto;
-    }
-
-
-
 }
 
 @media only screen and (min-width: 65em) {
-
-    .productOverview,
-    .productList {
+    .productOverview, .productList {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
@@ -315,34 +233,18 @@
 
     .bottonSection {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    .tradeTitle,
-    .linkstitle,
-    .conTitle,
-    .newstitle {
+    .tradeTitle, .linkstitle, .conTitle, .newstitle {
         font-size: 1.5vw;
     }
 
-    .bottonDescription p,
-    .linkOption,
-    .contactOption,
-    .newsOption {
+    .bottonDescription p, .linkOption, .contactOption, .newsOption {
         font-size: 1.2vw;
     }
 
     input {
         font-size: 1.5vw;
     }
-
-    /*Products*/
-
-    .productList {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
-        padding-top: 5vw;
-    }
-
 }

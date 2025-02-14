@@ -14,20 +14,20 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css" as="style">
-    <link rel="stylesheet" href="styles/style-large.css" as="style">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/style-large.css">
 </head>
 
 <body>
     <header>
         <img src="images/logo_ecoshop.webp" alt="ecoshop_logo">
-        <a id="menu" href="#"></a>
+        <a id="menu" href="#" aria-label="Menu toggle"></a>
         <nav>
             <ul class="navigation">
-                <li><a id="home" href="index.html">Home</a></li>
-                <li><a id="products" href="products.html">Products</a></li>
-                <li><a id="about" href="about.html">About Us</a></li>
-                <li><a id="sitePlan" href="siteplan.html">Site Plan</a></li>
+                <li><a id="homepage" href="index.html">Home</a></li>
+                <li><a id="productspage" href="products.html">Products</a></li>
+                <li><a id="aboutpage" href="about.html">About Us</a></li>
+                <li><a id="sitePlanpage" href="siteplan.html">Site Plan</a></li>
             </ul>
         </nav>
     </header>
@@ -39,7 +39,7 @@
         </div>
 
         <section class="productsContainer">
-            <div class="productOverview"></div>
+            <div><h1 class="productOverview">null</h1></div>
             <button class="allProducts" type="button" onclick="location.href='products.html'">View All</button>
         </section>
 
@@ -47,17 +47,16 @@
             <h2>Why choose us?</h2>
             <div class="chooseUsContainer">
                 <div class="chooseUsCard">
-                    <img src="images/planet.webp" alt="eco">
+                    <img src="images/planet.webp" alt="Environmental sustainability icon">
                     <h3>Eco-friendly</h3>
                     <p>Our products are made with sustainable materials and eco-friendly processes.</p>
                 </div>
                 <div class="chooseUsCard">
-                    <img src="images/quality.webp" alt="quality">
-                    <h3>Quality</h3>
+                    <img src="images/quality.webp" alt="Quality assurance icon">
                     <p>We offer high-quality products that are durable and long-lasting.</p>
                 </div>
                 <div class="chooseUsCard">
-                    <img src="images/transform.webp" alt="variety">
+                    <img src="images/transform.webp" alt="Product variety icon">
                     <h3>Variety</h3>
                     <p>Our store has a wide variety of products to meet all your needs.</p>
                 </div>
@@ -74,22 +73,26 @@
                 <div class="bottonNavigation">
                     <ul>
                         <li class="linkstitle">Links</li>
-                        <li class="linkOption"><a id="products" href="products.html">Products</a></li>
-                        <li class="linkOption"><a id="about" href="about.html">About Us</a></li>
-                        <li class="linkOption"><a id="sitePlan" href="siteplan.html">Site Plan</a></li>
+                        <li class="linkOption"><a id="productsbotton" href="products.html">Products</a></li>
+                        <li class="linkOption"><a id="aboutbotton" href="about.html">About Us</a></li>
+                        <li class="linkOption"><a id="sitePlanbotton" href="siteplan.html">Site Plan</a></li>
                     </ul>
                 </div>
             </div>
             <div class="contact">
-                <li class="conTitle">Contact</li>
-                <li class="contactOption">customers@ecoshop.com</li>
-                <li class="contactOption">+54 9 341-123456</li>
+                <ul>
+                    <li class="conTitle">Contact</li>
+                    <li class="contactOption"><a href="mailto:customers@ecoshop.com">customers@ecoshop.com</a></li>
+                    <li class="contactOption"><a href="tel:+5493411234567">+54 9 341-123456</a></li>
+                </ul>
             </div>
 
             <div class="newsletter">
-                <li class="newstitle">Newsletter</li>
-                <li class="newsOption">Subscribe to our newsletter to receive updates on new products and promotions.</li>
-                <form action="/index.html">
+                <ul>
+                    <li class="newstitle">Newsletter</li>
+                    <li class="newsOption">Subscribe to our newsletter...</li>
+                </ul>
+                <form action="/index.html" method="get">
                     <input type="email" placeholder="Enter your email">
                     <button class="subsBtn">Subscribe</button>
                 </form>
@@ -97,8 +100,7 @@
         </section>
     </main>
     <footer>
-        &copy;<span id="year"></span> EcoShop</p>
-        <p>All rights reserved</p>
+        <p>&copy;<span id="year"></span>  EcoShop | All rights reserved</p>
     </footer>
     <script src="scripts/script.js" defer></script>
 </body>

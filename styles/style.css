@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,7 +25,7 @@ header {
   align-items: center;
 }
 
-header img{
+header img {
   width: 12vw;
 }
 
@@ -35,14 +35,12 @@ header img{
   font-size: 2rem;
   font-weight: 700;
   text-decoration: none;
-  padding: 0.2rem;
+  padding: 1vw;
   background-color: var(--secondary-color);
   color: white;
   cursor: pointer;
   margin-left: auto;
   border-radius: 0.3rem;
-  margin-left: auto;
-  padding: 1vw 1vw;
 }
 
 #menu::before {
@@ -82,7 +80,7 @@ header img{
   padding: 1em;
   font-weight: 700;
   font-size: clamp(1rem, 2vmin, 1.5rem);
-  font-family: var(--paragraph-font)
+  font-family: var(--paragraph-font);
 }
 
 .navigation a:hover {
@@ -99,8 +97,7 @@ nav ul {
   justify-content: center;
 }
 
-/*Body*/
-
+/* Body */
 body {
   margin: 0 auto;
   padding: 0;
@@ -108,79 +105,76 @@ body {
   width: 100%;
   align-items: center;
 }
-.mainTitle{
-  padding-top: 1vw;
-  padding-bottom: 5vw;
+
+.mainTitle {
+  padding: 1vw 0 5vw;
+  text-align: center;
 }
 
-
-/*Typography*/
 .mainTitle h2 {
   font-family: var(--title-font);
   font-size: 10vw;
-  color: var( --primary-color);
+  color: var(--primary-color);
 }
 
 .mainTitle h3 {
   font-family: var(--subtitle-font);
   font-size: 5vw;
-  color: var( --secondary-color);
+  color: var(--secondary-color);
 }
 
 p {
   font-family: var(--paragraph-font);
 }
 
-/*Colors*/
+/* Colors */
 .logo {
   width: 100vw;
   padding-bottom: 1em;
 }
 
+.primary, .secondary, .accent1, .accent2 {
+  padding: 0.5em;
+}
+
 .primary {
   background-color: var(--primary-color);
   color: white;
-  padding: 0.5em 0.5em;
 }
 
 .secondary {
   background-color: var(--secondary-color);
   color: white;
-  padding: 0.5em 0.5em;
 }
 
 .accent1 {
   background-color: var(--accent-color);
   color: black;
-  padding: 0.5em 0.5em;
 }
 
 .accent2 {
   background-color: var(--accent-color2);
   color: black;
-  padding: 0.5em 0.5em;
 }
 
-/*Typography*/
-.Titles {
+/* Typography */
+.Titles, .subtitles, .paragraphs {
   font-weight: 500;
-  font-family: var(--title-font);
+}
 
+.Titles {
+  font-family: var(--title-font);
 }
 
 .subtitles {
-  font-weight: 500;
   font-family: var(--subtitle-font);
-
 }
 
 .paragraphs {
-  font-weight: 500;
   font-family: var(--paragraph-font);
-
 }
 
-/*Wireframes*/
+/* Wireframes */
 .Wireframe {
   display: flex;
   flex-direction: column;
@@ -188,11 +182,11 @@ p {
   padding-top: 7vw;
 }
 
-.Wireframe h2{
+.Wireframe h2 {
   font-family: var(--title-font);
   font-size: 7vw;
   color: var(--primary-color);
-  padding: 1vw 1vw;
+  padding: 1vw;
 }
 
 .largeWireframe, .smallWireframe {
@@ -215,151 +209,150 @@ footer {
   text-align: center;
 }
 
-/*Containers*/
-.productsContainer{
+/* Containers */
+.productsContainer, .mainTitle {
+  text-align: center;
+}
+
+.productsContainer {
   padding-bottom: 5vw;
 }
 
-.mainTitle, .productsContainer{
-  text-align: center;
-  }
+.card {
+  padding: 2vw;
+}
 
-  .card{
-    padding: 2vw 2vw;
-  }
-
-.productOverview img,.productList img{
+.productOverview img, .productList img {
   max-height: 10rem;
 }
 
-.productOverview{
+.productOverview {
   padding-bottom: 5vw;
   text-align: center;
 }
 
-.productOverview h3{
+.productOverview h3 {
   font-family: var(--paragraph-font);
   color: var(--secondary-color);
   font-size: 3vw;
   font-weight: 900;
-  padding: 0.5vw 0.5vw;
+  padding: 0.5vw;
 }
 
-.productOverview p{
+.productOverview p {
   font-family: var(--subtitle-font);
   font-size: 1.5vw;
   font-weight: 700;
-  padding: 0.5vw 0.5vw;
+  padding: 0.5vw;
 }
 
-.addBtn{
+.addBtn, .allProducts {
   background-color: var(--secondary-color);
-  color:white;
+  color: white;
   font-family: var(--paragraph-font);
   font-weight: 900;
   border-color: transparent;
   border-radius: 0.3rem;
+}
+
+.addBtn {
   padding: 1vw 3vw;
 }
 
-.allProducts{
+.allProducts {
   padding: 1.5vw 5vw;
-  background-color: var(--secondary-color);
-  color:white;
-  font-family: var(--paragraph-font);
-  font-weight: 900;
-  border-color: transparent;
-  border-radius: 0.3rem;
 }
 
-.card p{
+.card p {
   font-family: var(--paragraph-font);
   padding-bottom: 0.5em;
 }
 
-.chooseUs{
+.chooseUs {
   text-align: center;
   margin: 0 auto;
   background-color: rgba(153, 205, 50, 0.08);
   padding-bottom: 3vw;
 }
 
-.chooseUs h2{
+.chooseUs h2 {
   font-family: var(--title-font);
   font-size: 7vw;
   font-weight: 900;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
+  padding: 5vw 0;
   color: var(--secondary-color);
 }
 
-.chooseUsContainer img{
+.chooseUsContainer img {
   max-height: 12vw;
 }
 
-.chooseUsContainer h3{
+.chooseUsContainer h3 {
   font-family: var(--subtitle-font);
   font-size: 4vw;
   font-weight: 700;
-  padding: 0.5vw 0.5vw;
+  padding: 0.5vw;
 }
 
-.chooseUsContainer p{
+.chooseUsContainer p {
   font-family: var(--paragraph-font);
   padding: 1.5vw 1vw;
   width: 70%;
   margin: 0 auto;
 }
 
-.bottonSection{
+.bottonSection {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 2vw 2vw;
+  padding: 2vw;
 }
 
-hr{
+hr {
   border: 0.1rem solid var(--secondary-color);
   width: 98%;
   margin: 0 auto;
   align-items: center;
 }
 
-.bottonSection div{
+.bottonSection div {
   width: 90%;
 }
 
-.bottonDescription,.bottonLinks{
+.bottonDescription, .bottonLinks {
   display: none;
 }
 
-.contact,.newsletter,.bottonNavigation li{
+.contact li, .newsletter li, .bottonNavigation li {
   list-style: none;
+  text-decoration: none;
 }
 
-.tradeTitle,.linkstitle,.conTitle,.newstitle{
+.tradeTitle, .linkstitle, .conTitle, .newstitle {
   font-family: var(--subtitle-font);
   font-size: 2.5vw;
   font-weight: 900;
   color: var(--secondary-color);
 }
 
-.bottonDescription p,.linkOption,.contactOption,.newsOption{
+.bottonDescription p, .linkOption, .contactOption a, .newsOption {
   font-family: var(--paragraph-font);
-  font-size: 2vw;
-  padding: 0.5vw 0.5vw;
+  font-size: 1.2vw;
+  padding: 0.5vw;
+  color: black;
+  text-decoration: none;
 }
 
-input{
+input {
   font-family: var(--paragraph-font);
-  font-size: 2.5vw;
+  font-size: 1vw;
   border-radius: 0.3rem;
   border-color: var(--secondary-color);
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
 }
 
-.subsBtn{
+.subsBtn {
   background-color: var(--secondary-color);
-  color:white;
+  color: white;
   font-family: var(--paragraph-font);
   font-weight: 900;
   border-color: transparent;
@@ -367,136 +360,136 @@ input{
   padding: 1vw 2vw;
 }
 
-/*Products*/
-.productList{
+/* Products */
+.productList {
   width: 90%;
   margin: 0 auto;
   align-items: center;
 }
 
-.productTitle{
+.productTitle {
   font-family: var(--title-font);
   font-size: 6vw;
   font-weight: 900;
   color: var(--primary-color);
-  padding: 2vw 2vw;
+  padding: 2vw;
   text-align: center;
 }
 
-.filterContainer{
+.filterContainer {
   text-align: center;
 }
 
-.filterContainer select{
+.filterContainer select {
   font-family: var(--paragraph-font);
   font-size: 1.6vw;
   border-radius: 0.3rem;
   border-color: var(--secondary-color);
 }
 
-.filterContainer label{
+.filterContainer label {
   font-family: var(--paragraph-font);
   font-size: 2vw;
   font-weight: 900;
   color: var(--secondary-color);
 }
 
-/*About Us*/
-.aboutSection{
+/* About Us */
+.aboutSection {
   padding-top: 2vw;
 }
 
-.mission h2,.story h2,.product h2{
+.mission h2, .story h2, .product h2 {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  font-family:var(--title-font);
+  font-family: var(--title-font);
   font-size: 7vw;
   color: var(--primary-color);
 }
 
-.mission p,.story p,.product p{
+.mission p, .story p, .product p {
   width: 90%;
   margin: 0 auto;
   text-align: center;
   font-family: var(--paragraph-font);
-  padding: 5vw 5vw;
+  padding: 5vw;
 }
 
-/*main*/
-main{
+/* Main */
+main {
   padding: 0 2vw;
   width: 100%;
   margin: 0 auto;
   align-items: center;
 }
 
-.siteContainer h2{
+.siteContainer h2 {
   font-family: var(--title-font);
   font-size: 7vw;
   color: var(--primary-color);
-  padding: 2vw 2vw;
+  padding: 2vw;
   text-align: center;
 }
 
-.siteContainer p{
+.siteContainer p {
   font-family: var(--paragraph-font);
-  padding: 2vw 2vw;
+  padding: 2vw;
 }
 
-.scenario-card{
-  padding: 1vw 1vw; 
+.scenario-card {
+  padding: 1vw;
 }
 
-.scenarios h2{
+.scenarios h2 {
   font-family: var(--title-font);
   font-size: 7vw;
   color: var(--primary-color);
-  padding: 1vw 1vw;
+  padding: 1vw;
   text-align: center;
 }
 
-.scenarios ul{
+.scenarios ul {
   font-family: var(--paragraph-font);
   padding: 2vw 1.5vw;
   list-style: none;
 }
 
-.Branding{
+.Branding {
   text-align: center;
   padding: 3vw 2vw;
 }
 
-.Branding h2{
+.Branding h2 {
   font-family: var(--title-font);
   font-size: 7vw;
   color: var(--primary-color);
-  padding: 1vw 1vw;
+  padding: 1vw;
   text-align: center;
 }
 
-.Branding img{
+.Branding img {
   width: 30%;
   margin: 0 auto;
-  padding: 3vw 2vw; 
+  padding: 3vw 2vw;
 }
 
-.Branding table{
+.Branding table {
   font-family: var(--paragraph-font);
   align-items: center;
   margin: 0 auto;
 }
 
-.colors td{
+.colors td {
   font-weight: 900;
   padding: 2vw 3vw;
 }
 
-.Typography{
-  padding: 2vw 2vw;
+.Typography {
+  padding: 2vw;
 }
 
-.Typography h3, .Typography h4,.Typography p{
+.Typography h3, .Typography h4, .Typography p {
   font-size: 6vw;
   padding: 1.5vw 2vw;
 }
