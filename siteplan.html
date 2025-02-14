@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,13 @@
     <title>EcoShop - Site Plan</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/style-large.css">
 </head>
+
 <body>
     <header>
         <img src="images/logo_ecoshop.webp" alt="ecoshop_logo" />
@@ -26,15 +30,20 @@
         </nav>
     </header>
     <main>
-        <h2>Overview</h2>
-        <h3>Site Name: EcoShop</h3>
-        <p>I chose the name EcoShop because it is the union of 2 simple and easy to remember words, Eco is a widely recognized abbreviation for everything related to ecology and the environment and Shop is a universal word that indicates that it is a store.</p>
-        <h3>Site Purpose</h3>
-        <p>The purpose is to Sell eco-friendly and sustainable products and educate and inspire visitors about an
-            eco-friendly lifestyle through informative content.</p>
-            <hr>
+        <div class="siteContainer">
+            <h2>Overview</h2>
+            <h3>Site Name: EcoShop</h3>
+            <p>I chose the name EcoShop because it is the union of 2 simple and easy to remember words, Eco is a widely
+                recognized abbreviation for everything related to ecology and the environment and Shop is a universal
+                word that indicates that it is a store.</p>
+            <h3>Site Purpose</h3>
+            <p>The purpose is to Sell eco-friendly and sustainable products and educate and inspire visitors about an
+                eco-friendly lifestyle through informative content.</p>
+        </div>
+
+        <hr>
         <section class="scenarios">
-            <h2>scenarios</h2>
+            <h2>Scenarios</h2>
             <div class="scenario-card">
                 <h3>How do I know if a product is truly sustainable?</h3>
                 <p>All our products go through a rigorous certification process that evaluates:</p>
@@ -86,9 +95,11 @@
                 </tr>
             </table>
             <h2>Typography</h2>
-            <h3 class="Titles">headings</h3>
-            <h4 class="subtitles">body</h4>
-            <p class="paragraphs">paragraph</p>
+            <div class="Typography">
+                <h3 class="Titles">headings</h3>
+                <h4 class="subtitles">body</h4>
+                <p class="paragraphs">paragraph</p>
+            </div>
         </section>
         <hr>
         <section class="Wireframe">
@@ -118,13 +129,15 @@
                 <li class="contactOption">customers@ecoshop.com</li>
                 <li class="contactOption">+54 9 341-123456</li>
             </div>
-            
+
             <div class="newsletter">
                 <li class="newstitle">Newsletter</li>
                 <li class="newsOption">Subscribe to our newsletter to receive updates on new products and promotions.
                 </li>
-                <input type="email" placeholder="Enter your email">
-                <button class="subsBtn">Subscribe</button>
+                <form action="/index.html">
+                    <input type="email" placeholder="Enter your email">
+                    <button class="subsBtn">Subscribe</button>
+                </form>
             </div>
             </div>
         </section>

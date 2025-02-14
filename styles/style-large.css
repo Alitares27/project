@@ -49,6 +49,53 @@
         padding-top: 5vw;
     }
 
+    /*About us*/
+    .aboutSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        background-color: rgba(153, 205, 50, 0.05)
+    }
+
+    .product {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column: span 2;
+        place-items: center;
+        background-image: url("../images/daffodils.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.2);
+        background-blend-mode: overlay;
+    }
+
+    .productDescription {
+        display: grid;
+        grid-column: 2/2;
+        padding-bottom: 0.5em;
+        color: white;
+        margin-left: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 0.4rem;
+    }
+
+    .product h2 {
+        padding-top: 0.5em;
+        padding-bottom: 0;
+        color: white;
+        margin-left: auto;
+    }
+
+    .product p {
+        padding-bottom: 0.5em;
+        color: white;
+        margin-left: auto;
+    }
+
+    hr{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 45em) {
@@ -133,36 +180,125 @@
         border-radius: 0.3rem;
     }
 
-      /*Products*/
+    /*Products*/
 
-      .productList {
+    .productList {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
         padding-top: 5vw;
     }
 
-    .filterContainer{
+    .filterContainer {
         text-align: center;
-      }
-      
-      .filterContainer select{
+    }
+
+    .filterContainer select {
         font-family: var(--paragraph-font);
         font-size: 1.2vw;
         border-radius: 0.3rem;
         border-color: var(--secondary-color);
-      }
-      
-      .filterContainer label{
+    }
+
+    .filterContainer label {
         font-family: var(--paragraph-font);
         font-size: 1.4vw;
         font-weight: 900;
         color: var(--secondary-color);
-      }
+    }
+
+    /*About us*/
+    .aboutSection {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        place-items: center;
+        padding-top: 0.5vw;
+    }
+
+    .mission {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        grid-column: span 2;
+        place-items: center;
+        background-image: url("../images/backabout.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.3);
+        background-blend-mode: overlay;
+        padding: 1.5vw 1.5vw;
+    }
+
+    .missionDescription {
+        display: grid;
+        grid-column: 2/2;
+        padding-bottom: 0.5em;
+        color: white;
+        margin-left: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 0.4rem;
+    }
+
+    .missionDescription h2 {
+        padding-top: 0.5em;
+        padding-bottom: 0;
+        color: white;
+        margin-left: auto;
+    }
+
+    .missionDescription p {
+        padding-bottom: 0.5em;
+        color: white;
+        margin-left: auto;
+        font-weight: 400;
+    }
+
+    .story {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        grid-column: span 2;
+        place-items: center;
+        background-image: url("../images/ecology.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.2);
+        background-blend-mode: overlay;
+        padding: 1.5vw 1.5vw;
+    }
+
+    .storyDescription {
+        display: grid;
+        grid-column: 1/2;
+        padding-bottom: 0.5em;
+        color: white;
+        margin-left: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 0.4rem;
+    }
+
+    .storyDescription h2 {
+        padding-top: 0.5em;
+        padding-bottom: 0;
+        color: white;
+        margin-left: auto;
+    }
+
+    .storyDescription p {
+        padding-bottom: 0.5em;
+        color: white;
+        margin-left: auto;
+    }
+
+
 
 }
 
 @media only screen and (min-width: 65em) {
+
     .productOverview,
     .productList {
         display: grid;

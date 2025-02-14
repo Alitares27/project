@@ -162,26 +162,22 @@ p {
 }
 
 /*Typography*/
-h2{
-  text-align: center;
-}
-
 .Titles {
   font-weight: 500;
   font-family: var(--title-font);
-  text-align: center;
+
 }
 
 .subtitles {
   font-weight: 500;
   font-family: var(--subtitle-font);
-  text-align: center;
+
 }
 
 .paragraphs {
   font-weight: 500;
   font-family: var(--paragraph-font);
-  text-align: center;
+
 }
 
 /*Wireframes*/
@@ -189,6 +185,14 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 7vw;
+}
+
+.Wireframe h2{
+  font-family: var(--title-font);
+  font-size: 7vw;
+  color: var(--primary-color);
+  padding: 1vw 1vw;
 }
 
 .largeWireframe, .smallWireframe {
@@ -395,4 +399,104 @@ input{
   font-size: 2vw;
   font-weight: 900;
   color: var(--secondary-color);
+}
+
+/*About Us*/
+.aboutSection{
+  padding-top: 2vw;
+}
+
+.mission h2,.story h2,.product h2{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-family:var(--title-font);
+  font-size: 7vw;
+  color: var(--primary-color);
+}
+
+.mission p,.story p,.product p{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: var(--paragraph-font);
+  padding: 5vw 5vw;
+}
+
+/*main*/
+main{
+  padding: 0 2vw;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.siteContainer h2{
+  font-family: var(--title-font);
+  font-size: 7vw;
+  color: var(--primary-color);
+  padding: 2vw 2vw;
+  text-align: center;
+}
+
+.siteContainer p{
+  font-family: var(--paragraph-font);
+  padding: 2vw 2vw;
+}
+
+.scenario-card{
+  padding: 1vw 1vw; 
+}
+
+.scenarios h2{
+  font-family: var(--title-font);
+  font-size: 7vw;
+  color: var(--primary-color);
+  padding: 1vw 1vw;
+  text-align: center;
+}
+
+.scenarios ul{
+  font-family: var(--paragraph-font);
+  padding: 2vw 1.5vw;
+  list-style: none;
+}
+
+.Branding{
+  text-align: center;
+  padding: 3vw 2vw;
+}
+
+.Branding h2{
+  font-family: var(--title-font);
+  font-size: 7vw;
+  color: var(--primary-color);
+  padding: 1vw 1vw;
+  text-align: center;
+}
+
+.Branding img{
+  width: 30%;
+  margin: 0 auto;
+  padding: 3vw 2vw; 
+}
+
+.Branding table{
+  font-family: var(--paragraph-font);
+  align-items: center;
+  margin: 0 auto;
+}
+
+.colors td{
+  font-weight: 900;
+  padding: 2vw 3vw;
+}
+
+.Typography{
+  padding: 2vw 2vw;
+}
+
+.Typography h3, .Typography h4,.Typography p{
+  font-size: 6vw;
+  padding: 1.5vw 2vw;
 }
