@@ -197,6 +197,8 @@ function displayProducts(filteredProducts, container) {
         image.src = product.imageUrl;
         image.alt = product.name;
         image.loading = "lazy";
+        image.style.width = "12vw";
+        image.style.height = "12vw";
 
         const name = document.createElement("h3");
         name.innerHTML = product.name;
