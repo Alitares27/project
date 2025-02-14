@@ -26,7 +26,8 @@ header {
 }
 
 header img {
-  width: 12vw;
+  width: 10vw;
+  height: auto;
 }
 
 /* Navigation Menu */
@@ -399,7 +400,7 @@ input {
   padding-top: 2vw;
 }
 
-.mission h2, .story h2, .product h2 {
+.missionDescription h2, .storyDescription h2, .productDescription h2 {
   width: 100%;
   margin: 0 auto;
   text-align: center;
