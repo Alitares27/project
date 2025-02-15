@@ -164,18 +164,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (productSelect) {
         const categories = new Set(["All"]);
-
         products.forEach(product => {
             categories.add(product.category); 
         });
-
         categories.forEach(category => {
             const option = document.createElement('option');
             option.value = category;
             option.textContent = category;
             productSelect.appendChild(option);
         });
-
         productSelect.addEventListener("change", function () {
             filterProductsByCategory();
         });
@@ -188,11 +185,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function displayProducts(filteredProducts, container) {
     container.innerHTML = "";
-
     filteredProducts.forEach(product => {
         const card = document.createElement("div");
         card.className = "card";
-
         const image = document.createElement("img");
         image.src = product.imageUrl;
         image.alt = product.name;
@@ -202,27 +197,21 @@ function displayProducts(filteredProducts, container) {
 
         const name = document.createElement("h3");
         name.innerHTML = product.name;
-
         const category = document.createElement("p");
         category.innerHTML = product.category;
-
         const price = document.createElement("p");
         price.innerHTML = `<span class="label">$ </span>${product.price}`;
-
         const button = document.createElement("button");
         button.innerHTML = "Add";
         button.className = "addBtn";
-
         button.addEventListener("click", () => {
             alert(`${product.name} added to cart!`);
         });
-
         card.appendChild(name);
         card.appendChild(image);
         card.appendChild(category);
         card.appendChild(price);
         card.appendChild(button);
-
         container.appendChild(card);
     });
 }
