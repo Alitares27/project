@@ -10,6 +10,11 @@
         font-size: 3vh;
     }
 
+    .productList img{
+        width: 30vh;
+        height: 30vh;
+    }
+
     .productList p{	
         font-size: 2vh;
         padding-bottom: 1vh;

@@ -223,15 +223,24 @@ footer {
 
 .card {
   padding: 0.8vw;
+  width: 70%;
 }
 
-.productOverview img, .productList img {
-  max-height: 10vh;
+.productOverview img{
+  max-width: 30vh;
+  max-height: 30vh;
+}
+
+.productList img{
+  max-width: 15vh;
+  max-height:15vh;
 }
 
 .productOverview {
   padding-bottom: 3vw;
   text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .productOverview h3 {
@@ -289,7 +298,7 @@ footer {
 
 .card p {
   font-family: var(--paragraph-font);
-  padding-bottom: 0.2vh;
+  padding-bottom: 0.5vh;
 }
 
 .chooseUs {
