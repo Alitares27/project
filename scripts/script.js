@@ -205,9 +205,16 @@ function displayProducts(filteredProducts, container) {
         const button = document.createElement("button");
         button.innerHTML = "Add";
         button.className = "addBtn";
+
+
         button.addEventListener("click", () => {
             alert(`${product.name} added to cart!`);
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            
         });
+
         card.appendChild(name);
         card.appendChild(image);
         card.appendChild(category);
@@ -231,7 +238,7 @@ function displayRandomProducts() {
     
     if (randomProductsContainer) {
         const shuffledProducts = [...products].sort(() => 0.5 - Math.random());
-        const selectedProducts = shuffledProducts.slice(0, 4);
+        const selectedProducts = shuffledProducts.slice(0, 3);
         displayProducts(selectedProducts, randomProductsContainer);
     }
 }
@@ -239,3 +246,63 @@ function displayRandomProducts() {
 if (document.querySelector(".productOverview")) {
     displayRandomProducts();
 }
+
+function showCart() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartWindow = document.createElement("div");
+    cartWindow.className = "cartWindow";
+
+    const closeButton = document.createElement("button");
+    closeButton.innerHTML = "Close";
+    closeButton.className = "closeBtn";
+    closeButton.addEventListener("click", () => {
+        document.body.removeChild(cartWindow);
+    });
+
+    const clearButton = document.createElement("button");
+    clearButton.innerHTML = "Clear";
+    clearButton.className = "clearBtn";
+    clearButton.addEventListener("click", () => {
+        localStorage.removeItem('cart');
+        document.body.removeChild(cartWindow);
+        showCart();
+    });
+    cartWindow.appendChild(clearButton);
+    cartWindow.appendChild(closeButton);
+
+    if (cart.length === 0) {
+        const emptyMessage = document.createElement("p");
+        emptyMessage.innerHTML = "Your cart is empty.";
+        cartWindow.appendChild(emptyMessage);
+    } else {
+        cart.forEach(product => {
+            const productDiv = document.createElement("div");
+            productDiv.className = "cartItem";
+
+            const name = document.createElement("h4");
+            name.innerHTML = product.name;
+            const price = document.createElement("p");
+            price.innerHTML = `<span class="label">$ </span>${product.price}`;
+
+            productDiv.appendChild(name);
+            productDiv.appendChild(price);
+            cartWindow.appendChild(productDiv);
+        });
+    }
+
+    document.body.appendChild(cartWindow);
+}
+
+
+
+const cartButton = document.createElement("button");
+cartButton.innerHTML = "View Cart";
+cartButton.className = "cartBtn";
+cartButton.style.position = "fixed";
+cartButton.style.bottom = "20px";
+cartButton.style.right = "20px";
+cartButton.style.zIndex = "1000";
+cartButton.addEventListener("click", showCart);
+
+document.body.appendChild(cartButton);
+

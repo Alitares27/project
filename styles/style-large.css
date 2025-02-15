@@ -247,7 +247,6 @@
 
 @media only screen and (min-width: 65em) {
 
-    .productOverview,
     .productList {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
