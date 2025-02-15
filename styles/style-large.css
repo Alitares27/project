@@ -115,7 +115,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
-        padding-top: 5vw;
+        padding-top: 2vw;
     }
 
     .chooseUsContainer {
@@ -225,7 +225,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
-        padding-top: 5vw;
+        padding-top: 2vw;
     }
 
     .chooseUsContainer {

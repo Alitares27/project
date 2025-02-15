@@ -197,8 +197,8 @@ function displayProducts(filteredProducts, container) {
         image.src = product.imageUrl;
         image.alt = product.name;
         image.loading = "lazy";
-        image.style.width = "12vw";
-        image.style.height = "12vw";
+        image.style.width = "10vw";
+        image.style.height = "10vw";
 
         const name = document.createElement("h3");
         name.innerHTML = product.name;
@@ -210,7 +210,7 @@ function displayProducts(filteredProducts, container) {
         price.innerHTML = `<span class="label">$ </span>${product.price}`;
 
         const button = document.createElement("button");
-        button.innerHTML = "Add to Cart";
+        button.innerHTML = "Add";
         button.className = "addBtn";
 
         button.addEventListener("click", () => {
