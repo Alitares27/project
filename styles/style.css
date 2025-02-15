@@ -181,12 +181,11 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 7vw;
 }
 
 .Wireframe h2 {
   font-family: var(--title-font);
-  font-size: 7vw;
+  font-size: 5vw;
   color: var(--primary-color);
   padding: 1vw;
 }
@@ -427,7 +426,13 @@ input {
 
 /* Main */
 main {
-  width: 95%;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.siteContainer{
+  width: 90%;
   margin: 0 auto;
   align-items: center;
 }
@@ -445,8 +450,15 @@ main {
   padding: 2vw;
 }
 
+.scenarios{
+  
+}
+
 .scenario-card {
   padding: 1vw;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .scenarios h2 {
