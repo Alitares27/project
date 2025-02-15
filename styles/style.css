@@ -300,7 +300,7 @@ footer {
 .chooseUsContainer p {
   font-family: var(--paragraph-font);
   padding: 1.5vw 1vw;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -318,7 +318,7 @@ hr {
 }
 
 .bottonSection div {
-  width: 90%;
+  width: 100%;
 }
 
 .bottonDescription, .bottonLinks {
@@ -407,16 +407,19 @@ input {
   margin: 0 auto;
   text-align: center;
   font-family: var(--title-font);
-  font-size: 7vw;
+  font-size: 5vw;
   color: var(--primary-color);
+}
+.product{
+  padding: 1.5vw 1.5vw;
 }
 
 .mission p, .story p, .product p {
-  width: 90%;
   margin: 0 auto;
   text-align: center;
   font-family: var(--paragraph-font);
-  padding: 5vw;
+  padding: 2vw;
+  width: 95%;
 }
 
 /* Main */
