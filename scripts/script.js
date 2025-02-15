@@ -16,7 +16,7 @@ const products = [
         name: "BambooBrush",
         category: "Personal Care",
         price: 5.99,
-        imageUrl: "https://yarokhair.com/cdn/shop/files/a8652575f059695a006fe2e0b33f0a1b10d7d3bd26bab04cf05f793c7ced782d_png.jpg?v=1685126179"
+        imageUrl: "https://www.biome.com.au/cdn/shop/files/Brightwooddetangle_2.webp?v=1722232128&width=1080"
     },
     {
         name: "SolidShampoo",
@@ -142,7 +142,7 @@ const products = [
         name: "WoodenToys",
         category: "Baby Care",
         price: 14.99,
-        imageUrl:"https://rukminim2.flixcart.com/image/850/1000/vehicle-pull-along/z/7/h/sonpra-baby-wooden-toys-antique-handicraft-tank-steam-engine-original-imaeccfa6wksnsfk.jpeg?q=90&crop=false"
+        imageUrl:"https://www.anticcolonial.com/wp-content/naturelovers/uploads/2017/04/juguete-madera.jpg"
     },
     {
         name: "EcoWipes",
