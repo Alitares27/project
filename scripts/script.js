@@ -192,9 +192,8 @@ function displayProducts(filteredProducts, container) {
         image.src = product.imageUrl;
         image.alt = product.name;
         image.loading = "lazy";
-        image.style.minWidth = "15vh";
-        image.style.minHeight = "15vh";
-        image.style.aspectRatio = "16/9";
+        image.style.Width = "20vh";
+        image.style.Height = "20vh";
 
         const name = document.createElement("h3");
         name.innerHTML = product.name;
@@ -238,7 +237,7 @@ function displayRandomProducts() {
 
     if (randomProductsContainer) {
         const shuffledProducts = [...products].sort(() => 0.5 - Math.random());
-        const selectedProducts = shuffledProducts.slice(0, 3);
+        const selectedProducts = shuffledProducts.slice(0, 4);
         displayProducts(selectedProducts, randomProductsContainer);
     }
 }
@@ -293,16 +292,4 @@ function showCart() {
     document.body.appendChild(cartWindow);
 }
 
-
-
-const cartButton = document.createElement("button");
-cartButton.innerHTML = "View Cart";
-cartButton.className = "cartBtn";
-cartButton.style.position = "fixed";
-cartButton.style.bottom = "20px";
-cartButton.style.right = "20px";
-cartButton.style.zIndex = "1000";
-cartButton.addEventListener("click", showCart);
-
-document.body.appendChild(cartButton);
 
