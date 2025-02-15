@@ -1,8 +1,18 @@
 @media only screen and (min-width: 25em) {
-    .productOverview, .productList {
+
+    .productOverview,
+    .productList {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+    }
+
+    .productList h3{
+        font-size: 3vh;
+    }
+
+    .productList p{	
+        font-size: 2vh;
+        padding-bottom: 1vh;
     }
 
     .chooseUs {
@@ -14,17 +24,23 @@
     }
 
     .chooseUs h2 {
-        font-size: 5vw;
+
         font-weight: 900;
     }
 
     .chooseUsContainer h3 {
-        font-size: 1.7vw;
+        font-size: 1rem;
         font-weight: 700;
     }
 
     .bottonDescription {
         display: grid;
+    }
+
+    .bottonNavigation ul {
+        width: 50%;
+        margin: 0 auto;
+        align-items: center;
     }
 
     .bottonLinks a {
@@ -36,7 +52,6 @@
     .bottonSection {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 4vw;
         padding: 2vw 2vw;
     }
 
@@ -55,7 +70,9 @@
         background: url("../images/daffodils.webp") center/cover no-repeat, rgba(0, 0, 0, 0.2);
     }
 
-    .productDescription, .product h2, .product p {
+    .productDescription,
+    .product h2,
+    .product p {
         color: white;
         margin-left: auto;
     }
@@ -107,15 +124,14 @@
 
     .mainTitle {
         text-align: center;
-        background: url("../images/ecoshopBK.webp") center/cover no-repeat, rgba(255, 255, 255, 0.7);
-        background-blend-mode: overlay;
+
     }
 
-    .productOverview, .productList {
+    .productOverview,
+    .productList {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
-        padding-top: 2vw;
+        grid-template-columns: repeat(3, 1fr);
+        padding-top: 1vw;
     }
 
     .chooseUsContainer {
@@ -129,15 +145,21 @@
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .tradeTitle, .linkstitle, .conTitle, .newstitle {
+    .tradeTitle,
+    .linkstitle,
+    .conTitle,
+    .newstitle {
         font-family: var(--subtitle-font);
         font-size: 2vw;
         font-weight: 900;
     }
 
-    .bottonDescription p, .linkOption, .contactOption, .newsOption {
+    .bottonDescription p,
+    .linkOption,
+    .contactOption,
+    .newsOption {
         font-family: var(--paragraph-font);
-        font-size: 1vw;
+        font-size: 1.3vw;
         font-weight: 450;
         color: black;
         padding-bottom: 0.5vw;
@@ -170,12 +192,12 @@
     .aboutSection {
         display: flex;
         flex-direction: column;
-        gap: 0.1vw;
         place-items: center;
-        padding-top: 0.5vw;
+        padding-top: 0vw;
     }
 
-    .mission, .story {
+    .mission,
+    .story {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 0.1vw;
@@ -194,7 +216,8 @@
         background-blend-mode: overlay;
     }
 
-    .missionDescription, .storyDescription {
+    .missionDescription,
+    .storyDescription {
         display: grid;
         grid-column: 2/2;
         padding-bottom: 0.5em;
@@ -204,13 +227,15 @@
         border-radius: 0.4rem;
     }
 
-    .missionDescription h2, .storyDescription h2 {
+    .missionDescription h2,
+    .storyDescription h2 {
         padding-top: 0.5em;
         padding-bottom: 0;
         color: white;
     }
 
-    .missionDescription p, .storyDescription p {
+    .missionDescription p,
+    .storyDescription p {
         padding-bottom: 0.5em;
         font-weight: 400;
     }
@@ -221,11 +246,11 @@
 }
 
 @media only screen and (min-width: 65em) {
-    .productOverview, .productList {
+
+    .productOverview,
+    .productList {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
-        padding-top: 2vw;
     }
 
     .chooseUsContainer {
@@ -239,11 +264,17 @@
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .tradeTitle, .linkstitle, .conTitle, .newstitle {
+    .tradeTitle,
+    .linkstitle,
+    .conTitle,
+    .newstitle {
         font-size: 1.5vw;
     }
 
-    .bottonDescription p, .linkOption, .contactOption, .newsOption {
+    .bottonDescription p,
+    .linkOption,
+    .contactOption,
+    .newsOption {
         font-size: 1.3vw;
     }
 

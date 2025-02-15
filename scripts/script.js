@@ -192,8 +192,9 @@ function displayProducts(filteredProducts, container) {
         image.src = product.imageUrl;
         image.alt = product.name;
         image.loading = "lazy";
-        image.style.width = "10vw";
-        image.style.height = "10vw";
+        image.style.width = "10vh";
+        image.style.height = "10vh";
+        image.style.aspectRatio = "16/9";
 
         const name = document.createElement("h3");
         name.innerHTML = product.name;
@@ -220,15 +221,8 @@ function filterProductsByCategory() {
     const productSelect = document.getElementById("product");
     const allProductsContainer = document.querySelector(".productList");
 
-    if (!productSelect || !allProductsContainer) return;
-
     const selectedCategory = productSelect.value;
-    let filteredProducts = products;
-
-    if (selectedCategory !== "All") {
-        filteredProducts = products.filter(product => product.category === selectedCategory);
-    }
-
+    const filteredProducts = selectedCategory === "All" ? products : products.filter(product => product.category === selectedCategory);
     displayProducts(filteredProducts, allProductsContainer);
 }
 

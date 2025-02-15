@@ -115,13 +115,13 @@ body {
 
 .mainTitle h2 {
   font-family: var(--title-font);
-  font-size: 5vw;
+  font-size: 7vh;
   color: var(--primary-color);
 }
 
 .mainTitle h3 {
   font-family: var(--subtitle-font);
-  font-size: 2vw;
+  font-size: 3vh;
   color: var(--secondary-color);
 }
 
@@ -224,7 +224,7 @@ footer {
 }
 
 .productOverview img, .productList img {
-  max-height: 10rem;
+  max-height: 10vh;
 }
 
 .productOverview {
@@ -235,14 +235,14 @@ footer {
 .productOverview h3 {
   font-family: var(--paragraph-font);
   color: var(--secondary-color);
-  font-size: 2vw;
+  font-size: 2.5vh;
   font-weight: 900;
   padding: 0.5vw;
 }
 
 .productOverview p {
   font-family: var(--subtitle-font);
-  font-size: 1.5vw;
+  font-size: 2vh;
   font-weight: 700;
   padding: 0.5vw;
 }
@@ -254,56 +254,56 @@ footer {
   font-weight: 900;
   border-color: transparent;
   border-radius: 0.3rem;
-  font-size: 1.2vw;
+  font-size: 0.7rem;
 }
 
 .addBtn {
-  padding: 0.5vw 0.5vw;
+  padding: 0.2rem 0.3rem;
 }
 
 .allProducts {
-  padding: 1vw 2vw;
+  padding: 0.2rem 0.5rem;
 }
 
 .card p {
   font-family: var(--paragraph-font);
-  padding-bottom: 0.5em;
+  padding-bottom: 0.2vh;
 }
 
 .chooseUs {
   text-align: center;
   margin: 0 auto;
-  background-color: rgba(153, 205, 50, 0.08);
-  padding-bottom: 3vw;
+  background-color: rgba(153, 205, 50, 0.05);
+  padding-bottom: 1.5rem;
 }
 
 .chooseUs h2 {
   font-family: var(--title-font);
-  font-size: 5vw;
+  font-size: 5vh;
   font-weight: 900;
   padding: 2vw 0;
   color: var(--primary-color);
 }
 
 .chooseUsContainer img {
-  width: 9vw;
-  height: 9vw;
+  width: 4rem;
+  height: 4rem;
   aspect-ratio: 4/3;
 }
 
 .chooseUsContainer h3 {
   font-family: var(--subtitle-font);
-  font-size: 1.5vw;
+  font-size: 2.5vh;
   font-weight: 700;
   padding: 0.5vw;
 }
 
 .chooseUsContainer p {
   font-family: var(--paragraph-font);
-  padding: 0.5vw 0vw;
-  width: 90%;
+  padding-bottom: 2vh;
+  width: 80%;
   margin: 0 auto;
-  font-size: 1.2vw;
+  font-size: 2vh;
 }
 
 .bottonSection {
@@ -341,7 +341,7 @@ hr {
 
 .bottonDescription p, .linkOption, .contactOption a, .newsOption {
   font-family: var(--paragraph-font);
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   padding: 0.5vw;
   color: black;
   text-decoration: none;
@@ -363,6 +363,7 @@ input {
   border-color: transparent;
   border-radius: 0.3rem;
   padding: 0.2vw 0.5vw;
+  font-size: 1.2vh;
 }
 
 /* Products */
@@ -448,10 +449,6 @@ main {
 .siteContainer p {
   font-family: var(--paragraph-font);
   padding: 2vw;
-}
-
-.scenarios{
-  
 }
 
 .scenario-card {
